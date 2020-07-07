@@ -15,6 +15,7 @@ public class StringConverter {
         StringBuilder stringBuilder = new StringBuilder(s);
         for(int i = 0 ; i < stringBuilder.length() ; i++)
            result.append(convertCharToASCII(stringBuilder.charAt(i))).append(" ");
+        result.deleteCharAt(result.length()-1);
         return result.toString();
     }
 
